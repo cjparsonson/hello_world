@@ -1,0 +1,65 @@
+[0;33m--- esp-idf-monitor 1.4.0 on com5 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33mStack dump detected[0m
+[0;33m0x42006406: uart_ll_get_txfifo_len at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/hal/esp32c3/include/hal/uart_ll.h:403
+ (inlined by) uart_tx_char at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/vfs/vfs_uart.c:165
+0x42007500: uart_write at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/vfs/vfs_uart.c:210 (discriminator 2)
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x42005c52: console_write at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x42006404: uart_ll_get_txfifo_len at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/hal/esp32c3/include/hal/uart_ll.h:403
+ (inlined by) uart_tx_char at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/vfs/vfs_uart.c:165
+0x42007500: uart_write at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/vfs/vfs_uart.c:210 (discriminator 2)
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x42005c52: console_write at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x403818a2: esp_timer_impl_get_time at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c:72 (discriminator 1)
+0x403818a2: esp_timer_impl_get_time at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c:72 (discriminator 1)
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x40383514: systimer_ticks_to_us at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/esp_hw_support/port/esp32c3/systimer.c:16
+[0m
+[0;33m0x42005ffa: usb_serial_jtag_tx_char at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/vfs/vfs_usb_serial_jtag.c:126 (discriminator 1)
+[0m
+[0;33mTo exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m0x42006404: uart_ll_get_txfifo_len at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/hal/esp32c3/include/hal/uart_ll.h:403
+ (inlined by) uart_tx_char at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/vfs/vfs_uart.c:165
+0x42007500: uart_write at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/vfs/vfs_uart.c:210 (discriminator 2)
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x42005c52: console_write at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x42006404: uart_ll_get_txfifo_len at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/hal/esp32c3/include/hal/uart_ll.h:403
+ (inlined by) uart_tx_char at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/vfs/vfs_uart.c:165
+0x42007500: uart_write at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/vfs/vfs_uart.c:210 (discriminator 2)
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x42005c52: console_write at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x42006406: uart_ll_get_txfifo_len at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/hal/esp32c3/include/hal/uart_ll.h:403
+ (inlined by) uart_tx_char at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/vfs/vfs_uart.c:165
+0x42007500: uart_write at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/vfs/vfs_uart.c:210 (discriminator 2)
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x42005c52: console_write at C:/Users/cjpar/esp/v5.2.2/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0m
+Traceback (most recent call last):
+  File "C:\Users\cjpar\esp\v5.2.2\esp-idf\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "subprocess.py", line 550, in run
+  File "subprocess.py", line 1199, in communicate
+  File "subprocess.py", line 1262, in wait
+  File "subprocess.py", line 1543, in _wait
+KeyboardInterrupt
